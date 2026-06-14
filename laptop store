@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Laptop Store</h1>
+        <p>Find Your Perfect Laptop</p>
+    </header>
+
+    <section class="products">
+
+        <div class="card">
+            <h2>Dell Inspiron</h2>
+            <p>Intel i5 | 8GB RAM | 512GB SSD</p>
+            <h3>₹55,000</h3>
+            <button onclick="buyLaptop('Dell Inspiron')">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>HP</h2>
+            <p>Intel i7 | 16GB RAM | 512GB SSD</p>
+            <h3>₹75,000</h3>
+            <button onclick="buyLaptop('HP')">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>Lenovo</h2>
+            <p>AMD Ryzen 5 | 8GB RAM | 512GB SSD</p>
+            <h3>₹60,000</h3>
+            <button onclick="buyLaptop('Lenovo')">Buy Now</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© Google Laptop Store. Selected laptop is Reserved for you</p>
+    </footer>
+
+    <script>
+        function buyLaptop(name){
+            alert(name + " selected successfully!");
+        }
+    </script>
+
+</body>
+</html>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:snow;
+}
+
+header{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.card{
+    width:380px;
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    padding:35px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:gray;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:green;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.card button{
+    background:green;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:greenyellow;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    font-size:18px;
+}
